@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:youtube/binding/init_bining.dart';
+import 'package:youtube/src/binding/init_bining.dart';
 import 'src/app.dart';
 import 'package:get/get.dart';
 
