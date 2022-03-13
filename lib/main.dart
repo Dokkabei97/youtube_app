@@ -13,15 +13,17 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-        title: 'Youtube Clone App',
-        theme: ThemeData(
-          primaryColor: Colors.white,
-          primarySwatch: Colors.blue,
-          visualDensity: VisualDensity.adaptivePlatformDensity,
+      title: 'Youtube Clone App',
+      theme: ThemeData(
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Colors.white,
+          titleTextStyle: TextStyle(color: Colors.black),
         ),
-        initialBinding: InitBinding(),
-        initialRoute: "/",
-        getPages: [GetPage(name: "/", page: () => const App())],
+        visualDensity: VisualDensity.adaptivePlatformDensity,
+      ),
+      initialBinding: InitBinding(),
+      initialRoute: "/",
+      getPages: [GetPage(name: "/", page: () => const App())],
     );
   }
 }
